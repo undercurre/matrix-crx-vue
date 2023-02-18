@@ -1,0 +1,36 @@
+{
+
+	"manifest_version": 2,
+
+	"name": "demo",
+
+	"version": "1.0.0",
+
+	"description": "简单的Chrome扩展demo",
+
+	"icons":
+	{
+		"16": "avatar.png",
+		"48": "avatar.png",
+		"128": "avatar.png"
+	},
+
+	"browser_action": 
+	{
+		"default_icon": "avatar.png",
+		"default_title": "这是一个示例Chrome插件",
+		"default_popup": "index.html"
+	},
+
+	"permissions":
+	[
+		"contextMenus", 
+		"tabs", 
+		"notifications", 
+		"webRequest",
+		"webRequestBlocking",
+		"storage", 
+		"http://*/*", 
+		"https://*/*" 
+	]
+}
